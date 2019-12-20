@@ -1,19 +1,22 @@
-  import React from "react";
-import CharacterList from "./CharacterList";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import img from './rmbackgroundimage.jpg';
 
 
 const StyledDiv = styled.div`
-  margin: 20px auto;
-  width: 60%;
-  border: grey 2px solid;
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+  border: black 7px solid;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 1px;
+  font-family: Times;
+  box-shadow: 0 56px 38px rgba(0, 0, 0, 0.3), 0 47px 17px rgba(0, 0, 0, 0.22);
   overflow: hidden;
   &:hover {
-  background-color: skyblue;
+  background-color: green;
+  background-image: url(${img});
+  background-size: cover;
   }
 `;
 
