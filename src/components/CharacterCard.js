@@ -3,7 +3,7 @@ import CharacterList from "./CharacterList";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// styling
+
 const StyledDiv = styled.div`
   margin: 20px auto;
   width: 60%;
@@ -26,7 +26,6 @@ const CharacterCard = props => {
       <h3>Species: {props.species}</h3>
     </StyledDiv>
   );
-  // ;<span>todo: character</span>;
 };
 
 export default CharacterCard;

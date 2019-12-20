@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard";
-import { Link } from "react-router-dom";
 import SearchForm from "./SearchForm";
 import axios from "axios";
 
@@ -25,8 +24,8 @@ export default function CharacterList() {
     axios
       .get("https://rickandmortyapi.com/api/character")
       .then(response => {
-        console.log("Character: ", response.data);
-        console.log("Character: ", response.data.results);
+        // console.log("Character: ", response.data);
+        // console.log("Character: ", response.data.results);
         fetchChars(response.data.results);
       })
       .catch(error => {
